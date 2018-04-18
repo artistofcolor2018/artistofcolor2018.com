@@ -2,8 +2,8 @@ title: A Day in the Life of an Artist of Color
 email: artistofcolor2018@gmail.com
 description: >
   A Day in the Life of an Artist of Color
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://artistofcolor2018.github.io/artistofcolor2018.com"
+baseurl: "/artistofcolor2018.com" # the subpath of your site, e.g. /blog
+url: "http://artistofcolor2018.github.io"
 
 # Build settings
 markdown: kramdown
