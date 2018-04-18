@@ -12,7 +12,9 @@ html, body, #photoDiv {
 #overPhotoDiv {
 	z-index: 100;
 	height: 100%;
-	text-align: right;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 
@@ -24,6 +26,7 @@ html, body, #photoDiv {
 .homeItem {
 	color: #fff;
 	margin-right: -200px;
+	align-self: flex-end;
 }
 
 .homeItemAnimation {

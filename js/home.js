@@ -6,12 +6,12 @@ var classList = [
 	'photoDiv05'
 ];
 
-function loopThroughImages() {
+function loopThroughImages(animateHomeItem) {
 	classList.forEach(function(className, i) {
 		setTimeout(function() {
 			$('#photoDiv').removeClass();
 			$('#photoDiv').addClass(className);
-			if (i === classList.length - 1) {
+			if (i === classList.length - 1 && animateHomeItem) {
 				$('.homeItem').addClass('homeItemAnimation');
 			}
 		}, 1000 * i);
@@ -19,5 +19,8 @@ function loopThroughImages() {
 }
 
 $( document ).ready(function() {
-	loopThroughImages();
+	loopThroughImages(true);
+	$('#repeatSlides').click(function() {
+		loopThroughImages(false);
+	});
 });
