@@ -14,6 +14,7 @@ function loopThroughImages(animateHomeItem) {
 			$('#photoDiv').addClass(className);
 			if (i === classList.length - 1 && animateHomeItem) {
 				$('.homeItem').addClass('homeItemAnimation');
+				$('#infobanner').addClass('infobanneranimation');
 			}
 		}, 1000 * (i + offset));
 	});
