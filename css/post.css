@@ -1,0 +1,27 @@
+#postimg {
+	width: 86%;
+	margin-left: 7%;
+	box-shadow: 0 1.6em 0 -1em #777777;
+	margin-bottom: 32px;
+}
+
+#posttxt {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.postLink {
+	color: #333333;
+	text-decoration: none;
+}
+
+.postLink:hover, .postLink:active {
+	color: #333333;
+	text-decoration: underline;
+}
+
+.carouselImg {
+	height: 45vw;
+}

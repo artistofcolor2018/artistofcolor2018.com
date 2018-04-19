@@ -1,0 +1,28 @@
+<!--
+    This component generates a carousel with imgs.
+    Arguments:
+        - imgs
+-->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for img in imgs %}
+      {% if forloop.first %}
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index }}" class="active"></li>
+      {% else %}
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index }}"></li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    {% for img in imgs %}
+      <div class="item active">
+        <img src="{{ img }}">
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

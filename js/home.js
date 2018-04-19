@@ -7,6 +7,7 @@ var classList = [
 ];
 
 function loopThroughImages(animateHomeItem) {
+	var offset = animateHomeItem ? 1 : 0;
 	classList.forEach(function(className, i) {
 		setTimeout(function() {
 			$('#photoDiv').removeClass();
@@ -14,7 +15,7 @@ function loopThroughImages(animateHomeItem) {
 			if (i === classList.length - 1 && animateHomeItem) {
 				$('.homeItem').addClass('homeItemAnimation');
 			}
-		}, 1000 * i);
+		}, 1000 * (i + offset));
 	});
 }
 

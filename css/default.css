@@ -1,0 +1,21 @@
+.homeItem {
+	color: #fff;
+}
+
+.homeItemLink, .homeItemLink:active, .homeItemLink:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.homeItemLink:hover {
+	color: #fff;
+}
+
+#sidetitleimg {
+	width: 100%;
+}
+
+#poemimg {
+	width: 80vw;
+	align-self: center;
+}

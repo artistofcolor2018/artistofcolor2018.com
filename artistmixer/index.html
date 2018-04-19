@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Artist Mixer"
+imgs:
+ - /img/artistmixer/01.jpg
+ - /img/artistmixer/02.jpg
+ - /img/artistmixer/03.jpg
+ - /img/artistmixer/04.jpg
+ - /img/artistmixer/05.jpg
+ - /img/artistmixer/06.jpg
+ - /img/artistmixer/07.jpg
+ - /img/artistmixer/08.jpg
+ - /img/artistmixer/09.jpg
+ - /img/artistmixer/10.jpg
+ - /img/artistmixer/11.jpg
+ - /img/artistmixer/12.jpg
+---
+<div class="container" id="projects">
+	<br>
+	<h2>Artist Mixer</h2>
+    <br>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for img in page.imgs %}
+      <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    {% for img in page.imgs %}
+      <div class="item {% if forloop.first %}active{% endif %}" align="center">
+        <img class="carouselImg" src="{{ site.baseurl }}{{ img }}">
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+</div>
+
+
+<link rel="stylesheet" href="../css/card.css">
+<div class="container">
+    <h3>Artist Vendors</h3>
+    <br>
+    {% for artistvendor in site.data.artistvendors %}
+    <div class="row">
+        <div class="col-sm-4">
+            {% include card.html
+                postTitle=artistvendor.name
+                postImg=artistvendor.img
+                postBio=artistvendor.bio
+            %}
+        </div>
+        <div class="col-sm-8">
+            <h3 class="cardH">{{ artistvendor.name }}</h3>
+            <p>{{ artistvendor.bio }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <br>
+</div>

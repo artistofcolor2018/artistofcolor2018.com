@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="../css/post.css">
+<link rel="stylesheet" href="../css/card.css">
+<div class="container">
+    <br>
+    <p><a href="{{ site.baseurl }}/photoseries"><span aria-hidden="true">&lt;</span> Back to Photo Series</a></p>
+    <div align="center">
+        <h2>{{ page.title }}</h2>
+    </div>
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for img in page.imgs %}
+      <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    {% for img in page.imgs %}
+      <div class="item {% if forloop.first %}active{% endif %}" align="center">
+        <img class="carouselImg" src="{{ site.baseurl }}{{ img }}">
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+    <br>
+    <div class="row">
+        <div id="posttxt">
+            {{ content }}
+        </div>
+    </div>
+    <p><a href="{{ site.baseurl }}/photoseries"><span aria-hidden="true">&lt;</span> Back to Photo Series</a></p>
+</div>

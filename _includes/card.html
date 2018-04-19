@@ -1,0 +1,25 @@
+<!--
+    This component generates a card with post details.
+    Arguments:
+        - postUrl
+        - postImg
+        - postTitle
+-->
+
+<link rel="stylesheet" href="/artistofcolor2018.com/css/card.css">
+
+{% if include.postUrl %}
+<a href="/artistofcolor2018.com/{{ include.postUrl }}" class="postLink">
+{% endif %}
+    <div class="postcardwrapper">
+        <div class="postcard">
+            <img class="cardImg" src="/artistofcolor2018.com/{{ include.postImg }}">
+        </div>
+        <div class="overpostcard" align="center">
+            <br>
+            <h3 class="cardH">{{ include.postTitle }}</h3>
+        </div>
+    </div>
+{% if include.postUrl %}
+</a>
+{% endif %}
