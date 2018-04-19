@@ -2,8 +2,8 @@ title: A Day in the Life of an Artist of Color
 email: artistofcolor2018@gmail.com
 description: >
   A Day in the Life of an Artist of Color is an ongoing project that brings together Artists of Color in Philadelphia through the curation of both digital and physical spaces.
-baseurl: "/artistofcolor2018.com" # the subpath of your site, e.g. /blog
-url: "http://artistofcolor2018.github.io"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://artistofcolor2018.com"
 
 # Build settings
 markdown: kramdown

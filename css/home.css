@@ -53,6 +53,11 @@ html, body, #photoDiv {
 	color: #fff;
 }
 
+.alwaysonlink, .alwaysonlink:active, .alwaysonlink:visited, .alwaysonlink:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
 .photoDiv01 { background-image: url('../img/slide/01.jpg'); background-position: center top; background-size: 100%; }
 .photoDiv02 { background-image: url('../img/slide/02.jpg'); background-position: center top; background-size: 100%; }
 .photoDiv03 { background-image: url('../img/slide/03.jpg'); background-position: center top; background-size: 100%; }

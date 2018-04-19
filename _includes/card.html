@@ -6,14 +6,14 @@
         - postTitle
 -->
 
-<link rel="stylesheet" href="/artistofcolor2018.com/css/card.css">
+<link rel="stylesheet" href="/css/card.css">
 
 {% if include.postUrl %}
-<a href="/artistofcolor2018.com/{{ include.postUrl }}" class="postLink">
+<a href="{{ include.postUrl }}" class="postLink">
 {% endif %}
     <div class="postcardwrapper">
         <div class="postcard">
-            <img class="cardImg" src="/artistofcolor2018.com/{{ include.postImg }}">
+            <img class="cardImg" src="{{ include.postImg }}">
         </div>
         <div class="overpostcard" align="center">
             <br>
